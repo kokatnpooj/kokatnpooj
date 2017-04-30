@@ -1,0 +1,73 @@
+Reading data from file hepatitis-training.dat
+2 categories
+16 attributes
+Read 110 instances
+Reading data from file hepatitis-test.dat
+Read 27 instances
+
+ASCITES = True:
+ SPIDERS = True:
+  VARICES = True:
+   FIRMLIVER = True:
+    Class live, prob=1.000000
+   FIRMLIVER = False:
+    BIGLIVER = True:
+     STEROID = True:
+      Class live, prob=1.000000
+     STEROID = False:
+      FEMALE = True:
+       Class live, prob=1.000000
+      FEMALE = False:
+       ANTIVIRALS = True:
+        FATIGUE = True:
+         Class die, prob=1.000000
+        FATIGUE = False:
+         Class live, prob=1.000000
+       ANTIVIRALS = False:
+        Class die, prob=1.000000
+    BIGLIVER = False:
+     Class live, prob=1.000000
+  VARICES = False:
+   Class die, prob=1.000000
+ SPIDERS = False:
+  FIRMLIVER = True:
+   AGE = True:
+    Class live, prob=1.000000
+   AGE = False:
+    SGOT = True:
+     Class live, prob=1.000000
+    SGOT = False:
+     ANTIVIRALS = True:
+      Class die, prob=1.000000
+     ANTIVIRALS = False:
+      STEROID = True:
+       Class live, prob=1.000000
+      STEROID = False:
+       Class die, prob=1.000000
+  FIRMLIVER = False:
+   SGOT = True:
+    BIGLIVER = True:
+     SPLEENPALPABLE = True:
+      Class live, prob=1.000000
+     SPLEENPALPABLE = False:
+      ANOREXIA = True:
+       Class die, prob=1.000000
+      ANOREXIA = False:
+       Class live, prob=1.000000
+    BIGLIVER = False:
+     Class die, prob=1.000000
+   SGOT = False:
+    Class live, prob=1.000000
+ASCITES = False:
+ BIGLIVER = True:
+  STEROID = True:
+   Class die, prob=1.000000
+  STEROID = False:
+   ANOREXIA = True:
+    Class die, prob=1.000000
+   ANOREXIA = False:
+    Class live, prob=1.000000
+ BIGLIVER = False:
+  Class live, prob=1.000000
+Decision Tree 0.7777777777777778
+Baseline Classifier 0.8518518518518519
